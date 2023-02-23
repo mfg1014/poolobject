@@ -81,7 +81,31 @@ public class ReusablePoolTest {
 	 */
 	@Test
 	public void testReleaseReusable() {
-		fail("Not yet implemented");
+		
+		Reusable r = new Reusable();
+		ReusablePool pool = new ReusablePool(4);
+		
+		boolean excepcion = false;
+		
+		try {
+			pool.releaseReusable(r);	
+			
+		}catch(DuplicatedInstanceException e ) {
+			
+			fail("El reusable ya se encuentra en el pool");
+		}
+
+		try {
+			pool.releaseReusable(r);	
+			
+		}catch(DuplicatedInstanceException e ) {
+			
+			excepcion = true;
+		}
+		if(excepcion = false) {
+			
+			fail("Reusable no liberado.");
+		}
 	}
 
 }
