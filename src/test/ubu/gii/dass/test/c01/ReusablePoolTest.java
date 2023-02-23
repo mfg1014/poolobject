@@ -54,7 +54,26 @@ public class ReusablePoolTest {
 	 */
 	@Test
 	public void testAcquireReusable() {
-		fail("Not yet implemented");
+		int n = 20;
+		boolean excepcion = false;
+		ReusablePool pool = new ReusablePool(n);
+		for(int i = 0; i < n;i++) {
+			try {
+				pool.acquireReusable();	
+			}catch(NotFreeInstanceException e ) {
+				fail("No adquiere todos los disponibles");
+			}
+			
+		}
+		try {
+			pool.acquireReusable();	
+		}catch(NotFreeInstanceException e ) {
+			excepcion = true;
+		}
+		if(excepcion = false) {
+			fail("Adquiere minimo un reusable mas");
+		}
+		
 	}
 
 	/**
