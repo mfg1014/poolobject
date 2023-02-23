@@ -12,6 +12,7 @@ import org.junit.Test;
 import ubu.gii.dass.c01.DuplicatedInstanceException;
 import ubu.gii.dass.c01.NotFreeInstanceException;
 import ubu.gii.dass.c01.ReusablePool;
+import ubu.gii.dass.c01.Reusable;
 
 /**
  * @author alumno
