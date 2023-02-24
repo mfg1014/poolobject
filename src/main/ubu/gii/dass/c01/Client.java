@@ -6,10 +6,12 @@ import java.util.logging.Logger;
 public class Client{
 	
 	
+	public static ReusablePool pool;
+	public static Reusable r1,r2,r3;
+	public static Logger logger = Logger.getLogger("c01");
+
 	public static void main(String arg[]) throws NotFreeInstanceException, DuplicatedInstanceException{
-	  ReusablePool pool;
-	  Reusable r1,r2,r3;
-	  Logger logger = Logger.getLogger("c01");
+
 	 
 	  
 	  pool = ReusablePool.getInstance();

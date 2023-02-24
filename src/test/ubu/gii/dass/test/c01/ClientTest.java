@@ -1,11 +1,14 @@
 package ubu.gii.dass.test.c01;
 
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 import static org.junit.Assert.*;
 
 import ubu.gii.dass.c01.Client;
 
 
-public class ReusablePoolTest {
+public class ClientTest {
 
 	/**
 	 * @throws java.lang.Exception
@@ -27,7 +30,12 @@ public class ReusablePoolTest {
 	@Test
 	public void testmain() {
         Client c = new Client();
-        c.main();
+        try{
+            c.main(null);
+        }catch(Exception e){
+            fail("No se ha ejecutado el main");
+        }
+        
         assertNotEquals(c.pool, null);
         assertNotEquals(c.r1, null);
         assertNotEquals(c.r2, null);
@@ -36,7 +44,5 @@ public class ReusablePoolTest {
         
 		
 	}
-
-	
 
 }
