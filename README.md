@@ -1,7 +1,7 @@
 poolobject
 ==========
 
-[![Java CI](https://github.com/Kencho/poolobject/actions/workflows/ci.yml/badge.svg)](https://github.com/Kencho/poolobject/actions/workflows/ci.yml) [![Build Status](https://app.travis-ci.com/Kencho/poolobject.svg?branch=master)](https://app.travis-ci.com/Kencho/poolobject) [![codecov](https://codecov.io/gh/Kencho/poolobject/branch/master/graph/badge.svg)](https://codecov.io/gh/Kencho/poolobject)
+[![Java CI](https://github.com/Kencho/poolobject/actions/workflows/ci.yml/badge.svg)](https://github.com/mfg1014/poolobject/actions/workflows/ci.yml) [![Build Status](https://app.travis-ci.com/Kencho/poolobject.svg?branch=master)](https://app.travis-ci.com/Kencho/poolobject) [![codecov](https://codecov.io/gh/Kencho/poolobject/branch/master/graph/badge.svg)](https://app.codecov.io/gh/mfg1014/poolobject)
 
 Java code example of creational design pattern pool object
 
@@ -39,5 +39,6 @@ Preguntas:
 	El fichero test https://app.codecov.io/gh/mfg1014/poolobject/tree/master/src/test/ubu/gii/dass/test/c01
 	Este fichero tiene un 73.58% de cobertura. Esto se debe a que en ambos test, su ejecución no comete errores, por lo que el test no recoge ninguna excepción, debido a que estas nunca se producen.
 
-
+◦ ¿Cuál es el esfuerzo invertido en realizar la actividad?
+- Para realizar la actividad, no nos ha costado mucho esfuerzo, en menos de 1 día hemos realizado la práctica. Se puede ver en la gráfica de tiempo del codecov; el problema ha sido la integración del proyecto a github, donde la primera clase de prácticas(2 horas) estuvimos configurandolo, y la segunda clase de prácticas no podiamos hacer los commits a Github.
 
